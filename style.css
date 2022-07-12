@@ -59,6 +59,10 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .data {
+        display: flex;
+        flex-direction: column;
+    }
     .data input {
         width: 100%;
     }
