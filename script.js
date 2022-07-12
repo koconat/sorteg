@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('#fileInput').slideDown(500);
         $('#eData').slideUp(500);
 
-    // Add the following code if you want the name of the file appear on select
+    // Відслідковує введені зміни
     $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
@@ -36,6 +36,7 @@ $(document).ready(function () {
         });
     });
 
+    //Виклик відповідної функції сортування
     $("#btnSort").click (function () {
         switch (typeSort) {
             case 'select':
